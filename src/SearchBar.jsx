@@ -17,7 +17,7 @@ const SearchBar = ({ countries, searchFlags }) => {
       <input
         onChange={handleFlags}
         type="text"
-        placeholder="Search for countries"
+        placeholder="Search for countries..."
       />
     </div>
   );
