@@ -18,7 +18,7 @@ function App() {
     const fetchCountries = async () => {
       try {
         const response = await fetch(
-          "https://countries-search-data-prod-812920491762.asia-south1.run.app/count "
+          "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries "
         );
 
         const data = await response.json();
