@@ -1,12 +1,12 @@
-import style from "./Flags.module.css";
+import "./Flags.css";
 const Flags = ({ countries }) => {
   //   console.log(countries);
   return (
-    <div className={style.flags}>
+    <div className="flags">
       {countries.length > 0 &&
         countries.map((country, index) => {
           return (
-            <div key={index} className={style.countryCard}>
+            <div key={index} className="countryCard">
               <img src={country.png} alt={country.common} />
               <p>{country.common}</p>
             </div>
