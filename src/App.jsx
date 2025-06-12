@@ -18,14 +18,16 @@ function App() {
     const fetchCountries = async () => {
       try {
         const response = await fetch(
-          "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries "
+          "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries"
         );
-
+        if (!response.ok) {
+          throw new Error("Failed to fetch countries");
+        }
         const data = await response.json();
         // console.log(data);
         setCountries(data);
       } catch (error) {
-        console.log("Failed to fetch data", error);
+        console.log(error);
       }
     };
     fetchCountries();
