@@ -7,7 +7,7 @@ const Flags = ({ countries }) => {
         countries.map((country, index) => {
           return (
             <div key={index} className={style.countryCard}>
-              <img src={country.png} alt={country.name} />
+              <img src={country.png} alt={country.common} />
               <p>{country.common}</p>
             </div>
           );
